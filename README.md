@@ -1,5 +1,6 @@
 # MoonContacts
 ![Image description](https://github.com/kubzero/MoonContacts/blob/master/Mooncascade/Mooncascade/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@2x.png)
+
 Application that grab list of workers from server and compare them with existed on phone contactbook.
 
 
