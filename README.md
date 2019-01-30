@@ -10,9 +10,10 @@ Application that grab list of workers from server and compare them with existed 
 * Choose any iPhone simulator or choose your own iPhone device (previously should be connected to PC with cable).
 * Start simulation.
 * Phone may ask to settup from settings this developer as prooven.
-When application runs it will request for access to you contact list: 
+* When application runs it will request for access to you contact list: 
 
 ![Image description](https://pp.userapi.com/c850120/v850120099/cd1d1/zwGqxCrVUto.jpg)
+
 You should tap "OK". 
 Access to should be given in order to use all application capabilities. 
 
