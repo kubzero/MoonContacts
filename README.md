@@ -21,9 +21,9 @@ You should tap "OK".
 Access should be given in order to use all application capabilities. 
 
 ## Requirements to compile and run program
-Your PC must run Xcode 10.1 
-App was written on Swift 4.2 
-Your idevice should be updated to iOS 12 or later.
+- Your PC must run Xcode 10.1 
+- App was written on Swift 4.2 
+- Your idevice should be updated to iOS 12 or later.
 
 ## Used Architecture Patterns
  MVC Pattern - https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/MVC.html 
