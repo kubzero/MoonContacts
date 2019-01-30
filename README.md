@@ -3,6 +3,9 @@
 
 Application that grab list of workers from server and compare them with existed on phone contactbook.
 
+## Working principle
+Application is fetching worker data from weblinks as JSON files and fetching contacts from phone contactbook. If data is fetched CoreData is saving all contacts to database. Next application is filtering data and show contacts in table. Contacts that exist in both sources are higlited with additional button which refere to Native iOS contatc view. User is able to refresh table with pull-to-refresh function. If device does not have internet, data will be displayed from CoreData database.
+
 ### Installing
 * Download copy of application to your pc.
 * Run Mooncascade.xcodeproj.
@@ -15,7 +18,7 @@ Application that grab list of workers from server and compare them with existed 
 ![Image description](https://pp.userapi.com/c850120/v850120099/cd1d1/zwGqxCrVUto.jpg)
 
 You should tap "OK". 
-Access to should be given in order to use all application capabilities. 
+Access should be given in order to use all application capabilities. 
 
 ## Requirements to compile and run program
 Your PC must run Xcode 10.1 
@@ -27,5 +30,6 @@ Your idevice should be updated to iOS 12 or later.
 
 ## Used Frameworks
 ContactsUI  - https://developer.apple.com/documentation/contactsui
-Coredata - https://developer.apple.com/documentation/coredata
+
+CoreData - https://developer.apple.com/documentation/coredata
 
