@@ -26,8 +26,9 @@ Access should be given in order to use all application capabilities.
 - Your idevice should be updated to iOS 12 or later.
 
 ## Used Architecture Patterns
- MVC Pattern - https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/MVC.html 
+MVC Pattern - https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/MVC.html 
 
+MVC was used because it simplicity and easy to use with small and complicated apps. 
 ## Used Frameworks
 ContactsUI  - https://developer.apple.com/documentation/contactsui
 
