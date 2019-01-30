@@ -9,17 +9,14 @@
 import Foundation
 
 extension ViewController {
-    
-    func formateArray(arrayWithHeaders:[String],arrayWithData:[MainArray], phoneContactArray:[MainArray]) {
-        var arrayWithWorkersAndButtonState:[MainArray] = []
-        //save workers to coredata
-        self.saveToCoreData(arrayWithData: arrayWithData)
+    func formateArray(arrayWithHeaders:[String],arrayWithData:[EmployeeArray], phoneContactArray:[EmployeeArray]) {
+        var arrayWithWorkersAndButtonState:[EmployeeArray] = []
         //append and sort according to group
         for eachWorker in arrayWithData {
-            if phoneContactArray.contains(MainArray(fname: eachWorker.fname, lname: eachWorker.lname, position: nil, email: nil, phone: nil, projects: nil, phonebook: nil)) {
-                arrayWithWorkersAndButtonState.append(MainArray(fname: eachWorker.fname, lname: eachWorker.lname, position: eachWorker.position, email: eachWorker.email, phone: eachWorker.phone, projects: eachWorker.projects, phonebook: true))
+            if phoneContactArray.contains(EmployeeArray(fname: eachWorker.fname, lname: eachWorker.lname, position: nil, email: nil, phone: nil, projects: nil, phonebook: nil)) {
+                arrayWithWorkersAndButtonState.append(EmployeeArray(fname: eachWorker.fname, lname: eachWorker.lname, position: eachWorker.position, email: eachWorker.email, phone: eachWorker.phone, projects: eachWorker.projects, phonebook: true))
             } else {
-                arrayWithWorkersAndButtonState.append(MainArray(fname: eachWorker.fname, lname: eachWorker.lname, position: eachWorker.position, email: eachWorker.email, phone: eachWorker.phone, projects: eachWorker.projects, phonebook: false))
+                arrayWithWorkersAndButtonState.append(EmployeeArray(fname: eachWorker.fname, lname: eachWorker.lname, position: eachWorker.position, email: eachWorker.email, phone: eachWorker.phone, projects: eachWorker.projects, phonebook: false))
             }
         }
         //clean for uniq elements.
@@ -28,30 +25,30 @@ extension ViewController {
         let arrayWithUniqueHeaders = Array(Set(arrayWithHeaders))
         self.sectionHeaderTitles = arrayWithUniqueHeaders.sorted { $0 < $1 }
         
-        var androidPos = [MainArray]()
-        var iosPos = [MainArray]()
-        var testPos = [MainArray]()
-        var salePos = [MainArray]()
-        var otherPos = [MainArray]()
-        var pmPos = [MainArray]()
-        var webPos = [MainArray]()
+        var androidPos = [EmployeeArray]()
+        var iosPos = [EmployeeArray]()
+        var testPos = [EmployeeArray]()
+        var salePos = [EmployeeArray]()
+        var otherPos = [EmployeeArray]()
+        var pmPos = [EmployeeArray]()
+        var webPos = [EmployeeArray]()
         
         for each in uniqueArrayWithWorkers {
             switch each.position! {
             case "ANDROID":
-                androidPos.append(MainArray(fname: each.fname, lname: each.lname, position: each.position, email: each.email, phone: each.phone, projects: each.projects,phonebook: each.phonebook))
+                androidPos.append(EmployeeArray(fname: each.fname, lname: each.lname, position: each.position, email: each.email, phone: each.phone, projects: each.projects,phonebook: each.phonebook))
             case "IOS":
-                iosPos.append(MainArray(fname: each.fname, lname: each.lname, position: each.position, email: each.email, phone: each.phone, projects: each.projects,phonebook: each.phonebook))
+                iosPos.append(EmployeeArray(fname: each.fname, lname: each.lname, position: each.position, email: each.email, phone: each.phone, projects: each.projects,phonebook: each.phonebook))
             case "OTHER":
-                otherPos.append(MainArray(fname: each.fname, lname: each.lname, position: each.position, email: each.email, phone: each.phone, projects: each.projects,phonebook: each.phonebook))
+                otherPos.append(EmployeeArray(fname: each.fname, lname: each.lname, position: each.position, email: each.email, phone: each.phone, projects: each.projects,phonebook: each.phonebook))
             case "PM":
-                pmPos.append(MainArray(fname: each.fname, lname: each.lname, position: each.position, email: each.email, phone: each.phone, projects: each.projects,phonebook: each.phonebook))
+                pmPos.append(EmployeeArray(fname: each.fname, lname: each.lname, position: each.position, email: each.email, phone: each.phone, projects: each.projects,phonebook: each.phonebook))
             case "SALES":
-                salePos.append(MainArray(fname: each.fname, lname: each.lname, position: each.position, email: each.email, phone: each.phone, projects: each.projects,phonebook: each.phonebook))
+                salePos.append(EmployeeArray(fname: each.fname, lname: each.lname, position: each.position, email: each.email, phone: each.phone, projects: each.projects,phonebook: each.phonebook))
             case "TESTER":
-                testPos.append(MainArray(fname: each.fname, lname: each.lname, position: each.position, email: each.email, phone: each.phone, projects: each.projects,phonebook: each.phonebook))
+                testPos.append(EmployeeArray(fname: each.fname, lname: each.lname, position: each.position, email: each.email, phone: each.phone, projects: each.projects,phonebook: each.phonebook))
             case "WEB":
-                webPos.append(MainArray(fname: each.fname, lname: each.lname, position: each.position, email: each.email, phone: each.phone, projects: each.projects,phonebook: each.phonebook))
+                webPos.append(EmployeeArray(fname: each.fname, lname: each.lname, position: each.position, email: each.email, phone: each.phone, projects: each.projects,phonebook: each.phonebook))
             default:
                 print("one contact is out of positions")
             }

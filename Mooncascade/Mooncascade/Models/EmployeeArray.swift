@@ -7,8 +7,8 @@
 //
 
 import Foundation
-struct MainArray: Codable,Equatable, Hashable  {
-    static func == (first: MainArray, second: MainArray) -> Bool {
+struct EmployeeArray: Codable,Equatable, Hashable  {
+    static func == (first: EmployeeArray, second: EmployeeArray) -> Bool {
         return first.fname?.lowercased() == second.fname?.lowercased() && first.lname?.lowercased() == second.lname?.lowercased()
     }
     

@@ -11,7 +11,7 @@ import UIKit
 import CoreData
 extension ViewController {
     
-    func saveToCoreData(arrayWithData:[MainArray]) {
+    func saveToCoreData(arrayWithData:[EmployeeArray]) {
         self.deleteAllCoredataPositions()
         DispatchQueue.main.async {
             for each in arrayWithData{
@@ -60,7 +60,7 @@ extension ViewController {
             do {
                 let result = try context.fetch(request)
                 for data in result as! [NSManagedObject] {
-                    self.workerMergedArray.append(MainArray(fname: data.value(forKey: "fname") as? String, lname: data.value(forKey: "lname") as? String, position:  data.value(forKey: "position") as? String, email:  data.value(forKey: "email") as? String, phone:  data.value(forKey: "phone") as? String, projects:  data.value(forKey: "projects") as? Array, phonebook: nil))
+                    self.workerMergedArray.append(EmployeeArray(fname: data.value(forKey: "fname") as? String, lname: data.value(forKey: "lname") as? String, position:  data.value(forKey: "position") as? String, email:  data.value(forKey: "email") as? String, phone:  data.value(forKey: "phone") as? String, projects:  data.value(forKey: "projects") as? Array, phonebook: nil))
                 }
                 for each in self.workerMergedArray {
                     self.sectionHeaderTitles.append(each.position!)

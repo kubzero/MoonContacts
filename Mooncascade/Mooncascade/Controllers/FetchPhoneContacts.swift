@@ -25,7 +25,7 @@ extension ViewController {
                 let request = CNContactFetchRequest(keysToFetch: keys as [CNKeyDescriptor])
                 do {
                     try store.enumerateContacts(with: request, usingBlock: { (contact, stop) in
-                        self.phoneContacts.append(MainArray(fname: contact.givenName, lname: contact.familyName, position: nil, email: nil, phone: contact.phoneNumbers.first?.value.stringValue, projects: nil, phonebook: nil))
+                        self.phoneContacts.append(EmployeeArray(fname: contact.givenName, lname: contact.familyName, position: nil, email: nil, phone: contact.phoneNumbers.first?.value.stringValue, projects: nil, phonebook: nil))
                     })
                 }catch {
                     DispatchQueue.main.async {

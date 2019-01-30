@@ -11,8 +11,8 @@ import UIKit
 
 extension ViewController {
     func errorMessageFunc(errorTitle:String,errorMessage:String){
-    let alert = UIAlertController(title: errorTitle, message: errorMessage, preferredStyle: .alert)
-    alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
-    self.present(alert, animated: true)
+        let alert = UIAlertController(title: errorTitle, message: errorMessage, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+        self.present(alert, animated: true)
     }
 }

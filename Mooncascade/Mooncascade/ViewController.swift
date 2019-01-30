@@ -8,7 +8,6 @@
 
 import UIKit
 import ContactsUI
-import CoreData
 
 class ViewController: UIViewController, CNContactPickerDelegate, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
     
@@ -21,10 +20,10 @@ class ViewController: UIViewController, CNContactPickerDelegate, UITableViewDele
     let refreshControl = UIRefreshControl()
     let searchController = UISearchController(searchResultsController: nil)
     var counter = 0
-    var workerMergedArray:[MainArray] = []
-    var phoneContacts:[MainArray] = []
+    var workerMergedArray:[EmployeeArray] = []
+    var phoneContacts:[EmployeeArray] = []
     var sectionHeaderTitles:[String] = []
-    var workerMergedArrayWithHeaders:[[MainArray]] = []
+    var workerMergedArrayWithHeaders:[[EmployeeArray]] = []
     var indexPathForDetailView:IndexPath = []
     
     override func viewDidLoad() {
@@ -50,18 +49,16 @@ class ViewController: UIViewController, CNContactPickerDelegate, UITableViewDele
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return workerMergedArrayWithHeaders[section].count
     }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let employee = workerMergedArrayWithHeaders[indexPath.section][indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "reusableCell", for: indexPath) as! ReusableCell
-        cell.cellName.text = "\(workerMergedArrayWithHeaders[indexPath.section][indexPath.row].fname!) \(workerMergedArrayWithHeaders[indexPath.section][indexPath.row].lname!)"
+        cell.cellName.text = "\(employee.fname!) \(employee.lname!)"
         cell.cellButton.addTarget(self, action: #selector(ViewController.buttonClicked(sender:)), for: .touchUpInside)
-        if workerMergedArrayWithHeaders[indexPath.section][indexPath.row].phonebook == true {
-            cell.cellButton.isHidden = false
-        } else {
-            cell.cellButton.isHidden = true
-        }
+        cell.cellButton.isHidden = !employee.phonebook!
         return cell
     }
-    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "toDetails") {
@@ -105,7 +102,8 @@ class ViewController: UIViewController, CNContactPickerDelegate, UITableViewDele
     @objc func buttonClicked(sender : UIButton!) {
         let touchPoint = sender.convert(CGPoint.zero, to: self.tableView)
         let clickedButtonIndexPath = tableView.indexPathForRow(at: touchPoint)
-        getNativeContactView(clickedIndexpath: clickedButtonIndexPath!)
+        let employee = workerMergedArrayWithHeaders[clickedButtonIndexPath!.section][clickedButtonIndexPath!.row]
+        getNativeContactView(employee: employee)
     }
     
     @objc func refresh(sender:AnyObject) {

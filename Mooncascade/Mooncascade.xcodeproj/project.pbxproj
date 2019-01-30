@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		4941E1602200CCA20005B85D /* CoreDataSavingAndFetching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4941E15F2200CCA20005B85D /* CoreDataSavingAndFetching.swift */; };
 		4941E1622200D2150005B85D /* FormateAndRestructArrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4941E1612200D2150005B85D /* FormateAndRestructArrays.swift */; };
-		4941E1642200D2BF0005B85D /* NativeContactCaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4941E1632200D2BF0005B85D /* NativeContactCaller.swift */; };
 		4941E1662200D41D0005B85D /* GetWorkersFormTowns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4941E1652200D41D0005B85D /* GetWorkersFormTowns.swift */; };
 		4941E1682200D7980005B85D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4941E1672200D7980005B85D /* DetailViewController.swift */; };
 		496A34DD21FF774600DE4C5F /* ErrorMessageCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496A34DC21FF774600DE4C5F /* ErrorMessageCall.swift */; };
@@ -20,17 +19,17 @@
 		49BAC61121F78F01005ADF65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49BAC61021F78F01005ADF65 /* Assets.xcassets */; };
 		49BAC61421F78F01005ADF65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49BAC61221F78F01005ADF65 /* LaunchScreen.storyboard */; };
 		49BAC61E21F79287005ADF65 /* EmployeeJsonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BAC61D21F79287005ADF65 /* EmployeeJsonModel.swift */; };
-		49BAC62221F79A63005ADF65 /* MainArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BAC62121F79A63005ADF65 /* MainArray.swift */; };
+		49BAC62221F79A63005ADF65 /* EmployeeArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BAC62121F79A63005ADF65 /* EmployeeArray.swift */; };
 		49BAC62421F7A23F005ADF65 /* FetchWorkerJsonFromUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BAC62321F7A23F005ADF65 /* FetchWorkerJsonFromUrl.swift */; };
 		49BAC62621F8D2D8005ADF65 /* PhoneContactStcucture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BAC62521F8D2D8005ADF65 /* PhoneContactStcucture.swift */; };
 		49BAC62821F8D62C005ADF65 /* FetchPhoneContacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BAC62721F8D62C005ADF65 /* FetchPhoneContacts.swift */; };
 		49BC915B21F8F1CC003E3A6F /* reusableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BC915A21F8F1CC003E3A6F /* reusableCell.swift */; };
+		49DFEBFF22022B000024B043 /* NativeContactController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DFEBFE22022B000024B043 /* NativeContactController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4941E15F2200CCA20005B85D /* CoreDataSavingAndFetching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataSavingAndFetching.swift; sourceTree = "<group>"; };
 		4941E1612200D2150005B85D /* FormateAndRestructArrays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormateAndRestructArrays.swift; sourceTree = "<group>"; };
-		4941E1632200D2BF0005B85D /* NativeContactCaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeContactCaller.swift; sourceTree = "<group>"; };
 		4941E1652200D41D0005B85D /* GetWorkersFormTowns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetWorkersFormTowns.swift; sourceTree = "<group>"; };
 		4941E1672200D7980005B85D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		496A34DC21FF774600DE4C5F /* ErrorMessageCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessageCall.swift; sourceTree = "<group>"; };
@@ -43,11 +42,12 @@
 		49BAC61321F78F01005ADF65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		49BAC61521F78F01005ADF65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49BAC61D21F79287005ADF65 /* EmployeeJsonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeJsonModel.swift; sourceTree = "<group>"; };
-		49BAC62121F79A63005ADF65 /* MainArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainArray.swift; sourceTree = "<group>"; };
+		49BAC62121F79A63005ADF65 /* EmployeeArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeArray.swift; sourceTree = "<group>"; };
 		49BAC62321F7A23F005ADF65 /* FetchWorkerJsonFromUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchWorkerJsonFromUrl.swift; sourceTree = "<group>"; };
 		49BAC62521F8D2D8005ADF65 /* PhoneContactStcucture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneContactStcucture.swift; sourceTree = "<group>"; };
 		49BAC62721F8D62C005ADF65 /* FetchPhoneContacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchPhoneContacts.swift; sourceTree = "<group>"; };
 		49BC915A21F8F1CC003E3A6F /* reusableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reusableCell.swift; sourceTree = "<group>"; };
+		49DFEBFE22022B000024B043 /* NativeContactController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeContactController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +80,7 @@
 		49BAC60521F78F00005ADF65 /* Mooncascade */ = {
 			isa = PBXGroup;
 			children = (
-				49BAC61B21F78FB4005ADF65 /* AppleFiles */,
+				49BAC61B21F78FB4005ADF65 /* AppDelegates */,
 				49BAC62921F8DB2B005ADF65 /* Controllers */,
 				49BAC61C21F79265005ADF65 /* Models */,
 				49BAC60821F78F00005ADF65 /* ViewController.swift */,
@@ -94,12 +94,12 @@
 			path = Mooncascade;
 			sourceTree = "<group>";
 		};
-		49BAC61B21F78FB4005ADF65 /* AppleFiles */ = {
+		49BAC61B21F78FB4005ADF65 /* AppDelegates */ = {
 			isa = PBXGroup;
 			children = (
 				49BAC60621F78F00005ADF65 /* AppDelegate.swift */,
 			);
-			path = AppleFiles;
+			path = AppDelegates;
 			sourceTree = "<group>";
 		};
 		49BAC61C21F79265005ADF65 /* Models */ = {
@@ -107,7 +107,7 @@
 			children = (
 				49BC915A21F8F1CC003E3A6F /* reusableCell.swift */,
 				49BAC61D21F79287005ADF65 /* EmployeeJsonModel.swift */,
-				49BAC62121F79A63005ADF65 /* MainArray.swift */,
+				49BAC62121F79A63005ADF65 /* EmployeeArray.swift */,
 				49BAC62521F8D2D8005ADF65 /* PhoneContactStcucture.swift */,
 			);
 			path = Models;
@@ -116,12 +116,12 @@
 		49BAC62921F8DB2B005ADF65 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				49DFEBFE22022B000024B043 /* NativeContactController.swift */,
 				496A34DC21FF774600DE4C5F /* ErrorMessageCall.swift */,
 				4941E15F2200CCA20005B85D /* CoreDataSavingAndFetching.swift */,
 				49BAC62721F8D62C005ADF65 /* FetchPhoneContacts.swift */,
 				49BAC62321F7A23F005ADF65 /* FetchWorkerJsonFromUrl.swift */,
 				4941E1612200D2150005B85D /* FormateAndRestructArrays.swift */,
-				4941E1632200D2BF0005B85D /* NativeContactCaller.swift */,
 				4941E1652200D41D0005B85D /* GetWorkersFormTowns.swift */,
 			);
 			path = Controllers;
@@ -204,7 +204,6 @@
 				49BAC62421F7A23F005ADF65 /* FetchWorkerJsonFromUrl.swift in Sources */,
 				49BC915B21F8F1CC003E3A6F /* reusableCell.swift in Sources */,
 				4941E1602200CCA20005B85D /* CoreDataSavingAndFetching.swift in Sources */,
-				4941E1642200D2BF0005B85D /* NativeContactCaller.swift in Sources */,
 				49BAC60921F78F00005ADF65 /* ViewController.swift in Sources */,
 				49BAC60721F78F00005ADF65 /* AppDelegate.swift in Sources */,
 				49BAC62621F8D2D8005ADF65 /* PhoneContactStcucture.swift in Sources */,
@@ -212,7 +211,8 @@
 				49BAC62821F8D62C005ADF65 /* FetchPhoneContacts.swift in Sources */,
 				4941E1682200D7980005B85D /* DetailViewController.swift in Sources */,
 				496A34DD21FF774600DE4C5F /* ErrorMessageCall.swift in Sources */,
-				49BAC62221F79A63005ADF65 /* MainArray.swift in Sources */,
+				49BAC62221F79A63005ADF65 /* EmployeeArray.swift in Sources */,
+				49DFEBFF22022B000024B043 /* NativeContactController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,6 +7,7 @@
 //
 import Foundation
 import CoreData
+
 extension ViewController {
     
     func fetchWorkerDatafrom(workerUrl:String,completion: @escaping (employeeJsonModel?) -> Void) {
